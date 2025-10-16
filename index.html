@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Health System Final</title>
+    <style>
+      /* ===== General Layout ===== */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Ubuntu, sans-serif;
+        background-color: #f9fafb;
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 40px 20px;
+        max-width: 820px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+        background-color: #1d4ed8;
+        color: #fff;
+        padding: 10px 16px;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      }
+
+      h3 {
+        margin-top: 1.8em;
+        color: #1e3a8a;
+        font-size: 1.2rem;
+      }
+
+      p {
+        margin-bottom: 0.5em;
+      }
+
+      /* ===== Question and Choices ===== */
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 12px;
+        margin-bottom: 28px;
+      }
+
+      li {
+        background-color: #ffffff;
+        margin: 6px 0;
+        padding: 10px 14px;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      li:hover {
+        background-color: #e0e7ff;
+        border-color: #6366f1;
+      }
+
+      .correct {
+        background-color: #bbf7d0 !important;
+        border-color: #22c55e !important;
+        color: #064e3b;
+      }
+
+      .incorrect {
+        background-color: #fecaca !important;
+        border-color: #ef4444 !important;
+        color: #7f1d1d;
+      }
+
+      .feedback {
+        margin-top: 6px;
+        font-weight: 600;
+        padding-left: 4px;
+      }
+
+      /* ===== Subtle Shadow on Blocks ===== */
+      li,
+      h2 {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+      }
+
+      /* ===== Responsive Adjustment ===== */
+      @media (max-width: 600px) {
+        body {
+          padding: 20px 12px;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+        h3 {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ————————————————————————————————————————— -->
+    <!-- BEGIN: Your original Week 8 – Week 13 text, word‑for‑word, no “A:” markers -->
+    <!-- ————————————————————————————————————————— -->
+
+    <h2 id="week-8">Week 8 - In Class</h2>
+    <h3>
+      Q1: According to the presentation on the Vision for Oral Health Systems:
+    </h3>
+    <ul data-correct="4">
+      <li>
+        We currently lack the systems and information needed for dental care to
+        effectively improve the health of entire communities.
+      </li>
+      <li>
+        Dental practices are limited to improving the health of individual
+        patients who seek care in offices or clinics.
+      </li>
+      <li>
+        Dental payment systems primarily support improving community health
+        rather than focusing on individual patient care.
+      </li>
+      <li>
+        We already have the necessary understanding and systems in place for
+        dental care to improve the health of communities.
+      </li>
+    </ul>
+
+    <h3>
+      Q2:A ____________________can be characterized as a full-service
+      community-based system
+    </h3>
+    <ul data-correct="2">
+      <li>PPO</li>
+      <li>Virtual Dental Home</li>
+      <li>HMO</li>
+      <li>Consolidated Practice</li>
+    </ul>
+
+    <h3>
+      Q3: The primary oral diseases that oral health professionals need to deal
+      with are:
+    </h3>
+    <ul data-correct="2">
+      <li>
+        Acute disease conditions that can be treated with acute-care surgical
+        interventions.
+      </li>
+      <li>
+        Chronic diseases that are best managed with ‘chronic disease management’
+        techniques.
+      </li>
+      <li>Chronic diseases that can be cured by dental treatment.</li>
+      <li>Acute disease conditions that can be cured by medications.</li>
+    </ul>
+
+    <h3>
+      Q4: Which of the following is a principle of behavior change that supports
+      the adoption of “Mouth Health Habits”?
+    </h3>
+    <ul data-correct="2">
+      <li>
+        Encouraging large and dramatic behavior changes to accelerate results.
+      </li>
+      <li>
+        Messages delivered through trusted, culturally congruent community
+        members.
+      </li>
+      <li>Limiting reinforcement so individuals remain self-motivated.</li>
+      <li>
+        Relying only on dental professionals to provide the health message.
+      </li>
+    </ul>
+
+    <h3>
+      Q5: Which telehealth modality best describes systems that allow providers
+      to review patient records at a later time rather than during a live
+      interaction?
+    </h3>
+    <ul data-correct="3">
+      <li>Live Video (synchronous)</li>
+      <li>Remote Patient Monitoring</li>
+      <li>Store-and-Forward (asynchronous)</li>
+      <li>Mobile Health (mHealth)</li>
+    </ul>
+
+    <h2 id="week-8">Week 8 - Out of class</h2>
+
+    <h3>Question 1</h3>
+    <p>
+      What statement best describes the impact of Dental Service Organizations
+      (DSOs) on the oral health industry?
+    </p>
+    <ul data-correct="3">
+      <li>
+        Although there has been a decrease in the number of dentists in solo
+        private practice, the percent of dentists in a solo private practice has
+        been slowly increasing in the last few years.
+      </li>
+      <li>
+        The fastest growing segment of the dental industry is DSOs with 10-20
+        employees.
+      </li>
+      <li>
+        The number of dentists working for or with dental service organizations
+        has been increasing with over 10% of dentists working for or with a DSO
+        in 2022.
+      </li>
+      <li>
+        In 2022, for the first time, the percent of dentists working with or for
+        a DSO was over 50%
+      </li>
+    </ul>
+
+    <h3>Question 2</h3>
+    <p>
+      The “Vision for Oral Health Systems” described in the presentation focused
+      on:
+    </p>
+    <ul data-correct="4">
+      <li>
+        The “Quadruple Aim” which added the experiences of providers to the
+        Triple Aim.
+      </li>
+      <li>
+        The “Iron Triangle” which linked improving experiences of care for
+        patients with improving the health of population and decreasing the
+        per-capita cos of care.
+      </li>
+      <li>
+        The “Triple Aim” including improving experiences of care for patients,
+        improving the health of populations, and decreasing the per-capita cos
+        of care.
+      </li>
+      <li>
+        The “Golden Rings” including measurement and payment systems, prevention
+        and behavior science, and delivery systems.
+      </li>
+    </ul>
+
+    <h3>Question 3</h3>
+    <p>According to the presentation on the Vision for Oral Health Systems:</p>
+    <ul data-correct="4">
+      <li>
+        We do not yet have the systems or information we need to have dental
+        care systems able to improve the health of communities.
+      </li>
+      <li>
+        Dental payment systems mostly pay for improving community health as
+        opposed to health of induvial patients.
+      </li>
+      <li>
+        Dental practices can only focus on improving the health of patients who
+        come to the dental office or clinic.
+      </li>
+      <li>
+        We have the understanding we need to have dental care systems able to
+        improve the health of communities.
+      </li>
+    </ul>
+
+    <h3>Question 4</h3>
+    <p>
+      The primary oral diseases that oral health professionals need to deal with
+      are:
+    </p>
+    <ul data-correct="1">
+      <li>
+        Chronic diseases that are best managed with ‘chronic disease management’
+        techniques.
+      </li>
+      <li>Chronic diseases that can be cured by dental treatment.</li>
+      <li>Acute disease conditions that can be cured by medications.</li>
+      <li>
+        Acute disease conditions that can be treated with acute-care surgical
+        interventions.
+      </li>
+    </ul>
+
+    <h3>Question 5</h3>
+    <p>
+      The most effective way for oral health professionals to support people
+      with a lot of dental disease in adopting “mouth healthy habits” is to:
+    </p>
+    <ul data-correct="4">
+      <li>
+        Give people information at every dental visit about plaque removal and
+        reducing sugar intake.
+      </li>
+      <li>
+        Talk to people who don’t get regular dental care at health fairs in the
+        community about plaque removal and reducing sugar intake.
+      </li>
+      <li>
+        Focus information given at dental visits just on toothbrushing in order
+        not to overwhelm people with too much information.
+      </li>
+      <li>
+        Partner with community organizations or personnel who can be in touch
+        with people on a regular basic and train and help them in supporting the
+        adoption of mouth-healthy habits”.
+      </li>
+    </ul>
+
+    <h3>Question 6</h3>
+    <p>The Virtual Dental Home system can best be characterized as:</p>
+    <ul data-correct="3">
+      <li>A call-center system</li>
+      <li>A limited-service community-based system</li>
+      <li>A full-service community-based system</li>
+      <li>An advice and referral system</li>
+    </ul>
+
+    <h2 id="week-9">Week 9 - In Class</h2>
+    <h3>Q1: The primary goal of a Community-Engaged Oral Health System is:</h3>
+    <ul data-correct="3">
+      <li>
+        Engaging people in community settings for education and screening and
+        then referring them to a dental office for a full examination and other
+        treatment.
+      </li>
+      <li>
+        Getting people like teachers in schools or nurses in nursing homes to
+        supervise tooth brushing.
+      </li>
+      <li>
+        Reaching people in community sites and using multiple tools and
+        techniques to keep as many people healthy in the community site as
+        possible.
+      </li>
+      <li>
+        Primarily providing education sessions so people will know what to do to
+        maintain oral health.
+      </li>
+    </ul>
+
+    <h3>
+      Q2: The example in the presentation that referred to a rural dental
+      practice was based on the idea that:
+    </h3>
+    <ul data-correct="4">
+      <li>
+        If a dentist locates their dental practice in a rural area, people are
+        generally willing to drive long distances, making it possible to have a
+        viable dental practice in a rural area.
+      </li>
+      <li>
+        A dentist with an office in a rural area can serve more patients if the
+        dentist establishes satellite offices in neighboring communities and the
+        dentist travels to different offices on different days.
+      </li>
+      <li>
+        It is not viable for a dentist to open a dental office in a rural
+        community even if the dentist uses teledentistry, because there still
+        will not be enough patients.
+      </li>
+      <li>
+        If a dentist opens an office in a rural area and also has a hygienist
+        who can travel to neighboring communities and they are connected in a
+        Virtual Dental Home system, the dentist can have a viable rural
+        practice.
+      </li>
+    </ul>
+
+    <h3>
+      Q3: The “Concentric Circles of Care in Community Engaged Oral Health
+      Systems” concept is based on the idea that:
+    </h3>
+    <ul data-correct="4">
+      <li>
+        Community screening and prevention sessions can help get people into
+        dental offices and clinics.
+      </li>
+      <li>Most people don’t need much dental care.</li>
+      <li>
+        Dental hygienists can take care of the same problems that dentists can,
+        but at lower cost.
+      </li>
+      <li>
+        Most people in the United States do not get dental care, or at least not
+        regular care, in dental offices and clinics and engaging other people
+        and organizations is essential to provide oral health services for the
+        majority of the population.
+      </li>
+    </ul>
+
+    <h3>
+      Q4: In the Concentric Circles of Care model of community-engaged oral
+      health systems, the first 2 levels of care represent oral health
+      professionals who deliver the care or services. The 3rd level represents:
+    </h3>
+    <ul data-correct="4">
+      <li>home education using videos.</li>
+      <li>referring patients for specialized care.</li>
+      <li>public health professionals providing screening.</li>
+      <li>non-health professionals.</li>
+    </ul>
+
+    <h3>
+      Q5: Non-health professionals can play an important role in improving oral
+      health outcomes in the community. Which demonstration example in the
+      presentation used school staff to gather oral health information and take
+      photographs of the child's mouth that was analyzed by an AI system and
+      used for a remote oral health professional? Group of answer choices
+    </h3>
+    <ul data-correct="4">
+      <li>Ravenswood Family Health</li>
+      <li>Center Shorten the Line</li>
+      <li>Home Visitors in Riverside County</li>
+      <li>Kindergarten Oral Health Assessment (KOHA)</li>
+    </ul>
+
+    <h2 id="week-9">Week 9 - Out of Class</h2>
+
+    <h3>Question 1</h3>
+    <p>
+      The example in the presentation that referred to a rural dental practice
+      was based on the idea that:
+    </p>
+    <ul data-correct="4">
+      <li>
+        A dentist with an office in a rural area can serve more patients if the
+        dentist establishes satellite offices in neighboring communities and the
+        dentist travels to different offices on different days.
+      </li>
+      <li>
+        If a dentist locates their dental practice in a rural area, people are
+        generally willing to drive long distances, making it possible to have a
+        viable dental practice in a rural area.
+      </li>
+      <li>
+        It is not viable for a dentist to open a dental office in a rural
+        community even if the dentist uses teledentistry, because there still
+        will not be enough patients.
+      </li>
+      <li>
+        If a dentist opens an office in a rural area and also has a hygienist
+        who can travel to neighboring communities and they are connected in a
+        Virtual Dental Home system, the dentist can have a viable rural
+        practice.
+      </li>
+    </ul>
+
+    <h3>Question 2</h3>
+    <p>
+      The example in the presentation that referred to urban school-based health
+      centers was based on the fact that:
+    </p>
+    <ul data-correct="4">
+      <li>
+        School-based health centers tend to have good internet connections and
+        therefore are good place to locate Virtual Dental Home systems
+      </li>
+      <li>
+        Many school-based health centers are served by partnerships with health
+        centers and health centers have limited capacity compared to the need
+        for their services.
+      </li>
+      <li>
+        If there is a school-based health center in a particular community, then
+        there will be very few dental offices in that community.
+      </li>
+      <li>
+        School-based health centers tend to have only one or just a few dental
+        chairs and try to serve many more children than can be seen in those
+        chairs.
+      </li>
+    </ul>
+
+    <h3>Question 3</h3>
+    <p>
+      The part of the presentation about the Virtual Dental Home system at the
+      Ravenswood Heath Center illustrated that:
+    </p>
+    <ul data-correct="1">
+      <li>
+        Once a dental care provider learns how to efficiently operate a Virtual
+        Dental Home system, it is possible to expand their services to many
+        locations in their geographic area.
+      </li>
+      <li>
+        The best way for a dentist to review telehealth records is to do so in
+        real time as the record are collected so they can ask the dental
+        hygienist about anything they see that they have questions about.
+      </li>
+      <li>
+        There is a distinct limit to the number of sites that one dental
+        provider can service in a Virtual Dental Home system.
+      </li>
+      <li>
+        In order to carry all of the equipment needed to operate a Virtual
+        Dental Home system, it is necessary to have a specially designed
+        vehicle.
+      </li>
+    </ul>
+
+    <h3>Question 4</h3>
+    <p>
+      The presentation made the point that dental providers can use
+      teledentistry in a variety of ways, but each different way of using it
+      requires a different type of software and different equipment.
+    </p>
+    <ul data-correct="2">
+      <li>True</li>
+      <li>False</li>
+    </ul>
+
+    <h3>Question 5</h3>
+    <p>The primary goal of a Community-Engaged Oral Health System is:</p>
+    <ul data-correct="3">
+      <li>
+        Getting people like teachers in schools or nurses in nursing homes to
+        supervise tooth brushing.
+      </li>
+      <li>
+        Engaging people in community settings for education and screening and
+        then referring them to a dental office for a full examination and other
+        treatment.
+      </li>
+      <li>
+        Reaching people in community sites and using multiple tools and
+        techniques to keep as many people healthy in the community site as
+        possible.
+      </li>
+      <li>
+        Primarily providing education sessions so people will know what to do to
+        maintain oral health.
+      </li>
+    </ul>
+
+    <h3>Question 6</h3>
+    <p>
+      The “Concentric Circles of Care in Community Engaged Oral Health Systems”
+      concept is based on the idea that:
+    </p>
+    <ul data-correct="3">
+      <li>
+        Community screening and prevention sessions can help get people into
+        dental offices and clinics.
+      </li>
+      <li>
+        Dental hygienists can take care of the same problems that dentists can,
+        but a t lower cost.
+      </li>
+      <li>
+        Most people in the United States do not get dental care, or at least not
+        regular care, in dental offices and clinics and engaging other people
+        and organizations is essential to provide oral health services for the
+        majority of the population.
+      </li>
+      <li>Most people don’t need much dental care.</li>
+    </ul>
+
+    <h3>Question 7</h3>
+    <p>
+      Non-health professionals can help improve the oral health of people in
+      their communities by:
+    </p>
+    <ul data-correct="4">
+      <li>Categorizing the level of health or disease in the population.</li>
+      <li>Supporting adoption of mouth-healthy habits.</li>
+      <li>Performing some dental prevention procedures.</li>
+      <li>All of the above</li>
+    </ul>
+
+    <h2 id="week-10">Week 10 - In Class:</h2>
+    <h3>
+      Q1: The definition of _____________________ is supervision of dental
+      procedures based on instructions given by a licensed dentist, who must be
+      physically present in the treatment facility during the performance of
+      those procedures.
+    </h3>
+    <ul data-correct="4">
+      <li>Indirect supervision</li>
+      <li>No supervision</li>
+      <li>General supervision</li>
+      <li>Direct Supervision</li>
+    </ul>
+
+    <h3>
+      Q2: In California, if you wanted to look up the licensing and regulations
+      for dentists and dental hygienists, you would go to the Department of:
+    </h3>
+    <ul data-correct="2">
+      <li>Public Health</li>
+      <li>Consumer Affairs</li>
+      <li>Professional Affairs</li>
+      <li>Oral Health</li>
+    </ul>
+
+    <h3>
+      Q3: What is the role of the California Code of Regulations (CCR) in
+      regulating dental practice?
+    </h3>
+    <ul data-correct="2">
+      <li>
+        It contains laws passed by the state legislature and signed by the
+        governor.
+      </li>
+      <li>
+        It provides regulations and rules created by administrative agencies to
+        implement and enforce state laws.
+      </li>
+      <li>
+        It is a guideline document that dental professionals may choose to
+        follow but is not legally binding.
+      </li>
+      <li>It only applies to medical doctors, not dental professionals.</li>
+    </ul>
+
+    <h3>
+      Q4: Which section within the California Business and Professions Code
+      contains the laws that regulate the practice of dentistry in California?
+    </h3>
+    <ul data-correct="3">
+      <li>The Health and Safety Code</li>
+      <li>The Dental licensing Code</li>
+      <li>The Dental Practice Act</li>
+      <li>California Oral Health Act</li>
+    </ul>
+
+    <h3>
+      Q5: What is the key difference between a Geographic HPSA and a Population
+      HPSA?
+    </h3>
+    <ul data-correct="3">
+      <li>
+        Geographic HPSAs affect only rural communities, while Population HPSAs
+        affect only urban communities.
+      </li>
+      <li>
+        Geographic HPSAs are temporary designations, while Population HPSAs are
+        permanent.
+      </li>
+      <li>
+        Geographic HPSAs involve shortages for all residents in a defined area,
+        while Population HPSAs involve shortages for specific groups within an
+        area (e.g., low-income or homeless populations).
+      </li>
+      <li>
+        Geographic HPSAs include dental providers only, while Population HPSAs
+        include medical and mental health providers only.
+      </li>
+    </ul>
+
+    <h2 id="week-10">Week 10 - Out of Class</h2>
+
+    <h3>Question 1</h3>
+    <p>
+      The organization responsible in 2019 for deciding that dental
+      anesthesiology is a specialty of dentistry was:
+    </p>
+    <ul data-correct="1">
+      <li>
+        The National Commission on Recognition of Dental Specialties and
+        Certifying Boards
+      </li>
+      <li>The Department of Consumer Affairs</li>
+      <li>The Commission on Dental Accreditation</li>
+      <li>The California Dental Board</li>
+    </ul>
+
+    <h3>Question 2</h3>
+    <p>
+      In California, oral health care professionals are regulated by agencies
+      within the Department of:
+    </p>
+    <ul data-correct="4">
+      <li>Professional Affairs</li>
+      <li>Oral Health</li>
+      <li>Public Health</li>
+      <li>Consumer Affairs</li>
+    </ul>
+
+    <h3>Question 3</h3>
+    <p>
+      All oral health professionals are regulated by the Dental Board of
+      California.
+    </p>
+    <ul data-correct="2">
+      <li>True</li>
+      <li>False</li>
+    </ul>
+
+    <h3>Question 4</h3>
+    <p>
+      The definition of _____________________ is supervision of dental
+      procedures based on instructions given by a licensed dentist, who must be
+      physically present in the treatment facility during the performance of
+      those procedures.
+    </p>
+    <ul data-correct="2">
+      <li>No supervision</li>
+      <li>Direct supervision</li>
+      <li>Indirect supervision</li>
+      <li>General supervision</li>
+    </ul>
+
+    <h3>Question 5</h3>
+    <p>
+      What is the difference between rules about dental practice contained in
+      the California Dental Practice Act and those contained in the California
+      Code of Regulations.
+    </p>
+    <ul data-correct="2">
+      <li>
+        Rules contained in the California Dental Practice Act must be followed,
+        while those contained in the California Code of Regulations are
+        guidelines that are not required to be followed.
+      </li>
+      <li>
+        The California Dental Practice Act contains laws enacted by the
+        legislature and signed by the governor, while the California Code of
+        Regulations contains regulations adopted by administrative agencies.
+      </li>
+      <li>
+        The California Code of Regulations contains laws enacted by the
+        legislature and signed by the governor, while the California Dental
+        Practice Act contains regulations adopted by administrative agencies.
+      </li>
+      <li>
+        The California Dental Practice Act and the California Code of
+        Regulations and simply different terms used to describe the same set of
+        rules.
+      </li>
+    </ul>
+
+    <h3>Question 6</h3>
+    <p>
+      In California, an _________________ is allowed to perform any duty that an
+      RDH can perform under general supervision, with no supervision.
+    </p>
+    <ul data-correct="1">
+      <li>RDHAP</li>
+      <li>RDAEF</li>
+      <li>RDAP</li>
+      <li>RDAEF2</li>
+    </ul>
+
+    <h3>Question 7</h3>
+    <p>The RDHAP is a license category that is only available in California.</p>
+    <ul data-correct="1">
+      <li>True</li>
+      <li>False</li>
+    </ul>
+
+    <h3>Question 8</h3>
+    <p>
+      In California, the level of supervision of allied dental personnel which
+      allows supervision of dental procedures based on instructions given by a
+      licensed dentist but not requiring the physical presence of the
+      supervising dentist during the performance of those procedures is called:
+    </p>
+    <ul data-correct="1">
+      <li>General supervision</li>
+      <li>Direct supervision</li>
+      <li>Independent Practice</li>
+      <li>Prior supervision</li>
+    </ul>
+
+    <h3>Question 9</h3>
+    <p>
+      A Geographic Health Professional Shortage Areas (HPSA) is a shortage of
+      providers for a specific group of people.
+    </p>
+    <ul data-correct="2">
+      <li>True</li>
+      <li>False</li>
+    </ul>
+
+    <h3>Question 10</h3>
+    <p>
+      If a rural area has inadequate mental health care providers, it could
+      qualify as a ______________________HPSA.
+    </p>
+    <ul data-correct="2">
+      <li>population</li>
+      <li>geographic</li>
+    </ul>
+
+    <h2 id="week-11">Week 11 - In Class:</h2>
+    <h3>
+      Q1: The use of Home Visitors in a demonstration project in Riverside
+      County showed that most families were at
+    </h3>
+    <ul data-correct="3">
+      <li>high risk for dental disease.</li>
+      <li>at medium risk for dental disease.</li>
+      <li>at low risk for dental disease.</li>
+    </ul>
+
+    <h3>
+      Q2: The Concentric Circles Model demonstrates trends that support the
+      shift toward value in oral health care because it:
+    </h3>
+    <ul data-correct="2">
+      <li>
+        Is focused on preparing patients for treatment in dental offices,
+        therefore making dental office treatment more efficient.
+      </li>
+      <li>
+        Takes a population-focused approach that brings care into community
+        settings and applies modern principles of prevention and behavior
+        support science.
+      </li>
+      <li>
+        Is delivery system focused and used economic theory and practice to
+        maximize the throughput of dental delivery systems.
+      </li>
+      <li>
+        Is population focused and uses broad public awareness education
+        campaigns to improve the oral health of population groups that
+        traditionally have high rates of disease.
+      </li>
+    </ul>
+
+    <h3>
+      Q3: Which project used AI support, a remote dentist and non-dental
+      personnel?
+    </h3>
+    <ul data-correct="2">
+      <li>Inland Empire Home visiting project</li>
+      <li>KOHA Demonstration project</li>
+      <li>ECOHA Demonstration project</li>
+      <li>Varnish application by home visitors</li>
+    </ul>
+
+    <h3>
+      Q4: Which of the following best describes a barrier to adopting
+      community-engaged oral health care systems, even when awareness, policy
+      and reimbursement are favorable?
+    </h3>
+    <ul data-correct="2">
+      <li>Lack of public interest in preventive oral health</li>
+      <li>
+        Implementation challenges in doing something different than mainstream.
+      </li>
+      <li>Insufficient numbers of dental graduates.</li>
+      <li>Limited avialbility of supplies, material and equipment.</li>
+    </ul>
+
+    <h3>
+      Q5: Which of the following is a true statement about the benefits of
+      shifting oral health systems to a value-based care model?
+    </h3>
+    <ul data-correct="2">
+      <li>Payers experience higher costs per capita.</li>
+      <li>Populations achieve improved oral health outcomes</li>
+      <li>Dental industry reach becomes more restricted</li>
+      <li>
+        Dental professionals focus on tasks outside their training and
+        experience
+      </li>
+    </ul>
+
+    <h2 id="week-11">Week 11 - Out of Class</h2>
+
+    <h3>Question 1</h3>
+    <p>
+      Using non-dental personnel as part of a “Concentric-Circles of Care” model
+      is important because:
+    </p>
+    <ul data-correct="4">
+      <li>
+        Properly trained and supported non-dental personnel are capable of
+        providing the same level of oral health care as dental professionals in
+        community locations.
+      </li>
+      <li>
+        Services provided by non-dental personnel can be billed at the same rate
+        as services billed by oral health professionals and their salaries are
+        lower.
+      </li>
+      <li>
+        Oral health professionals can direct the services of non-oral health
+        professionals.
+      </li>
+      <li>
+        Even systems that use oral health professionals working in community
+        sites cannot reach most of the people in many underserved communities.
+      </li>
+    </ul>
+
+    <h3>Question 2</h3>
+    <p>
+      The Remote Kindergarten Oral Health Assessment (KOHA) demonstration was
+      important because:
+    </p>
+    <ul data-correct="3">
+      <li>
+        It is not possible to obtain results with the same degree of accuracy
+        using a remote KOHA assessment as can be obtained with an in-person KOHA
+        assessment.
+      </li>
+      <li>
+        There is a significant penalty for schools for not completing the KOHA
+        for all students.
+      </li>
+      <li>
+        Even though California has a mandated KOHA, most schools don’t complete
+        it for most students.
+      </li>
+      <li>
+        Referral for dental care for children in school needs to be done whether
+        the KOHA is done in person or remotely.
+      </li>
+    </ul>
+
+    <h3>Question 3</h3>
+    <p>
+      Among the factors that led to the success of the Remote Kindergarten Oral
+      Health Assessment (KOHA) demonstration were:
+    </p>
+    <ul data-correct="1">
+      <li>
+        Remote dentists could visualize the mouth as well or sometimes better by
+        looking at photographs than a hygienist could in-person.
+      </li>
+      <li>
+        The in-person non-dental professional was able to tell the remote
+        dentist what how to rank the KOHA measures with a higher degree of
+        accuracy than the remote dentist could.
+      </li>
+      <li>
+        Dental hygienists could visualize the mouth better in-person than a
+        remote dentist could by looking at photographs.
+      </li>
+      <li>
+        The Dental.Com AI system can complete the KOHA with higher accuracy than
+        either the in-person hygienist or the remote dentist.
+      </li>
+    </ul>
+
+    <h3>Question 4</h3>
+    <p>
+      The AI supported Remote Kindergarten Oral Health Assessment (KOHA)
+      demonstration showed that:
+    </p>
+    <ul data-correct="3">
+      <li>
+        The specific information gathered for a remote dentist is not important
+        because the remote dentist could complete an accurate KOHA with a
+        variety of different kinds of information.
+      </li>
+      <li>The study needs to be repeated because the results were unclear.</li>
+      <li>
+        The methods and systems used in the demonstration have the potential to
+        improve the ability for schools to complete the California mandated KOHA
+        and subsequently take steps to improve oral health and oral health
+        equity of children attending school.
+      </li>
+      <li>
+        AI systems can now perform dental diagnosis and treatment planning at a
+        higher level of accuracy than can be obtained by dentists or dental
+        hygienists.
+      </li>
+    </ul>
+
+    <h3>Question 5</h3>
+    <p>
+      The mission of the Home Visiting programs in the Inland Empire includes:
+    </p>
+    <ul data-correct="4">
+      <li>Provide material for structured home tooth brushing programs.</li>
+      <li>Prepare low- income parents for professional degree programs.</li>
+      <li>
+        Improve oral health for residents of Riverside and San Bernardino
+        Counties.
+      </li>
+      <li>
+        Support self-sufficiency of low-income parents and prepare children for
+        school.
+      </li>
+    </ul>
+
+    <h3>Question 6</h3>
+    <p>
+      The demonstration of using home visitors in an oral health care system
+      conducted in the Inland Empire showed that:
+    </p>
+    <ul data-correct="3">
+      <li>
+        Most parents were not doing the right things to raise their children
+        with good oral health and their children were at high risk for
+        developing dental disease.
+      </li>
+      <li>
+        Home visitors could perform the same services as dental hygienists but
+        at a lower cost.
+      </li>
+      <li>
+        Most parents were basically doing the right things to raise their
+        children with good oral health and their children were at low risk for
+        developing dental disease.
+      </li>
+      <li>
+        Because the children seen by home visitors were very young, the home
+        visitors were able to treat most of the dental disease they had in the
+        home.
+      </li>
+    </ul>
+
+    <h3>Question 7</h3>
+    <p>
+      People with developmental disabilities sometimes need to have dental work
+      completed using sedation or general anesthesia. In many parts of
+      California and in many other states:
+    </p>
+    <ul data-correct="3">
+      <li>
+        The demand for dental care for dental care for people with developmental
+        disabilities using sedation or general anesthesia far surpasses the
+        available resources resulting in short waiting times for these services.
+      </li>
+      <li>
+        The supply of dental care for dental care for people with developmental
+        disabilities using sedation or general anesthesia far surpasses the
+        available demand resulting in long waiting times for these services.
+      </li>
+      <li>
+        The demand for dental care for dental care for people with developmental
+        disabilities using sedation or general anesthesia far surpasses the
+        available resources resulting in long waiting times for these services.
+      </li>
+      <li>
+        The demand for dental care for dental care for people with developmental
+        disabilities using sedation or general anesthesia is about equal to the
+        available resources resulting in short waiting times for these services.
+      </li>
+    </ul>
+
+    <h3>Question 8</h3>
+    <p>CNU’s Shorten-the-Line Project is expected to demonstrate:</p>
+    <ul data-correct="2">
+      <li>
+        A 50% increase in the available resources for people with developmental
+        disabilities needing sedation or general anesthesia for dental care,
+        therefore shortening waiting times.
+      </li>
+      <li>
+        A 50 % reduction in people with developmental disabilities needing
+        sedation or general anesthesia for dental care, therefore shortening
+        waiting times.
+      </li>
+      <li>
+        The ability of behavior support specialists to be able to perform
+        preventive dental procedures in residential care facilities.
+      </li>
+      <li>
+        The ability of dental hygienists to perform restorative dentistry
+        procedures in residential care facilities.
+      </li>
+    </ul>
+
+    <h3>Question 9</h3>
+    <p>
+      The major barrier to adopting the Concentric Circles Model is awareness
+      because once people become aware of the potential for this type of system
+      to improve oral health and lower costs, these models can easily be adopted
+      in a variety of locations.
+    </p>
+    <ul data-correct="2">
+      <li>True</li>
+      <li>False</li>
+    </ul>
+
+    <h3>Question 10</h3>
+    <p>
+      The Concentric Circles Model is an example of trends that support the road
+      to value in oral health care because it:
+    </p>
+    <ul data-correct="3">
+      <li>
+        Is focused on preparing patients for treatment in dental offices,
+        therefore making dental office treatment more efficient.
+      </li>
+      <li>
+        Is population focused and uses broad public awareness education
+        campaigns to improve the oral health of population groups that
+        traditionally have high rates of disease.
+      </li>
+      <li>
+        Is population focused, supports bringing care into community locations,
+        and used modern principles of prevention and behavior support science.
+      </li>
+      <li>
+        Is delivery system focused and used economic theory and practice to
+        maximize the throughput of dental delivery systems.
+      </li>
+    </ul>
+
+    <h2 id="week-12">Week 12 - In Class:</h2>
+    <h3>
+      Q1: From: Truth Decay and Tooth Decay: The Role of Dental Teams in Sharing
+      the Science of Community Water Fluoridation
+    </h3>
+    <h3>
+      Some communities have ceased Community Water Fluoridation due to
+      misinformation. Which of the following best describes the role of dental
+      providers in supporting community water fluoridation (CWF)?
+    </h3>
+    <ul data-correct="4">
+      <li>
+        To mandate community-wide adoption of fluoridation policies without
+        addressing public concerns since we are the oral health professionals.
+      </li>
+      <li>Avoid discussing public health measures.</li>
+      <li>
+        Delegate all patient communication about CWF to public health officials.
+      </li>
+      <li>
+        To act as trusted leaders by using evidence-based resources to educate
+        patients about the safety and benefits of CWF.
+      </li>
+    </ul>
+
+    <h3>
+      Q2: From: Truth Decay and Tooth Decay: The Role of Dental Teams in Sharing
+      the Science of Community Water Fluoridation
+    </h3>
+    <h3>
+      In 1942 the NIH published a longitudinal study by H. Trendley Dean that
+      found that children in communities with more fluoride had fewer cavities.
+      The effect plateaued at concentrations greater than:
+    </h3>
+    <ul data-correct="3">
+      <li>.01 PPM</li>
+      <li>.001 PPM</li>
+      <li>1.0 PPM</li>
+      <li>.07 PPM</li>
+    </ul>
+
+    <h3>
+      Q3: From the Case Study: At the September 2023 City Council meeting,
+      retired college biology professor, John Morony, shared that fluoride
+      "cannot be shown to significantly reduce dental caries and that it is far
+      more toxic that previously thought," among other arguments. How many
+      people were there to testify in favor of fluoride and provide evidence to
+      oppose Morony's claims?
+    </h3>
+    <ul data-correct="4">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>0</li>
+    </ul>
+
+    <h3>
+      Q4: From: Truth Decay and Tooth Decay: The Role of Dental Teams in Sharing
+      the Science of Community Water Fluoridation
+    </h3>
+    <h3>
+      Healthy People 2030 goal OH-11 has a target of 77.1% of people in the US
+      residing in communities with water systems that have the recommended
+      amount of fluoride. Where does California rank?
+    </h3>
+    <ul data-correct="4">
+      <li>10th</li>
+      <li>45th</li>
+      <li>1sr</li>
+      <li>40th</li>
+    </ul>
+
+    <h2 id="week-12">Week 12 - Out of Class</h2>
+
+    <h3>Question 1</h3>
+    <p>From: Community Water Fluoridation: A Case Study</p>
+    <p>
+      The Del Rio City Council voted to remove fluoride from the community water
+      after hearing the presentation by:
+    </p>
+    <ul data-correct="4">
+      <li>a pediatrician.</li>
+      <li>a city councilman.</li>
+      <li>a community member.</li>
+      <li>a retired college professor.</li>
+    </ul>
+
+    <h3>Question 2</h3>
+    <p>
+      In the Toparamalige village, the fluoride concentration in the water is
+    </p>
+    <ul data-correct="1">
+      <li>more than 1.5 PPM</li>
+      <li>1.5 PPM</li>
+      <li>less than .7 PPM</li>
+      <li>.7 PPM</li>
+    </ul>
+
+    <h3>Question 3</h3>
+    <p>
+      From: Truth Decay and Tooth Decay: The Role of Dental Teams in Sharing the
+      Science of Community Water Fluoridation
+    </p>
+    <p>
+      A patient expresses concern that fluoride causes osteosarcoma because of
+      something a family member told them. How might a dentist respond using
+      current evidence?
+    </p>
+    <ul data-correct="2">
+      <li>
+        Recommend avoiding fluoride completely until more studies confirm its
+        safety.
+      </li>
+      <li>
+        Acknowledge the concern and explain that a 2014 study of thousands of
+        cases found no link between fluoride in drinking water and bone cancer
+        rate over a 25-year period.
+      </li>
+      <li>
+        State that fluoride has been proven to cause bone cancer in populations
+        with high natural water fluoride levels.
+      </li>
+      <li>
+        Explain that fluoride exposure is only safe if it comes from bottled
+        water, not community water supplies.
+      </li>
+    </ul>
+
+    <h2 id="week-13">Week 13 - In Class</h2>
+    <h3>Q1: The ADA policy on Teledentistry says that</h3>
+    <ul data-correct="3">
+      <li>
+        Examinations and subsequent interventions performed using teledentistry
+        must be based on the level of information required by the technology
+        available at the site where the information Is collected.
+      </li>
+      <li>
+        In-person (face to face) direct examination has been historically the
+        most direct way to provide care and remains the way that examinations
+        must be performed.
+      </li>
+      <li>
+        Examinations and subsequent interventions performed using teledentistry
+        must be based on the same level of information that would be available
+        in an in-person environment.
+      </li>
+      <li>
+        It is the legal responsibility of the dentist to ensure that all
+        personnel collecting records have completed courses certifying their
+        training and ability to do so.
+      </li>
+    </ul>
+
+    <h3>
+      Q2: Which of the following is an example of a Guidance document discussed
+      in the presentation?
+    </h3>
+    <ul data-correct="3">
+      <li>The Dental Practice Act</li>
+      <li>The Business and Professions Code</li>
+      <li>The Medi-Cal Program Provider Bulletin</li>
+      <li>The California Code of Regulations</li>
+    </ul>
+
+    <h3>
+      Q3: A dental practice is required by the state dental board to follow
+      scope of practice regulations for auxiliaries. The same practice also has
+      an internal rule that hygienists must complete chart notes before leaving
+      for the day.
+    </h3>
+    <ul data-correct="1">
+      <li>
+        The scope of practice regulations are “big P” Policies, while the chart
+        note rule is a “little p” policy.
+      </li>
+      <li>
+        Both are “big P” Policies because they involve professional behavior.
+      </li>
+      <li>
+        The chart note rule is a “big P” Policy because it affects patient
+        records.
+      </li>
+      <li>
+        The scope of practice regulation is a “little p” policy because it is
+        applied at a local office.
+      </li>
+    </ul>
+
+    <h3>
+      Q4: A dentist operates a Virtual Dental Home at a rural elementary school.
+      The hygienist was able to get 2 blurry radiographs and 1 extra oral
+      picture. The following are the chart notes made by the hygienist: Child
+      uncooperative with radiographs. How should the dentist proceed?
+    </h3>
+    <ul data-correct="2">
+      <li>Do a complete diagnosis and treatment plan.</li>
+      <li>
+        Explain to the hygienist there is not sufficient records for a
+        diagnosis.
+      </li>
+      <li>
+        Have the hygieinst tell the patient they are dropped from the program.
+      </li>
+      <li>
+        Ask the hygeinest to make the diagnosis since they saw the patient in
+        person.
+      </li>
+    </ul>
+
+    <h3>
+      Q5: The most important part of the policy environment that influences the
+      ability to use teledentistry to operate Virtual Dental Home System is:
+    </h3>
+    <ul data-correct="1">
+      <li>
+        Whether payers pay for covered dental services if performed using
+        asynchronous or store-and-forward telehealth systems.
+      </li>
+      <li>
+        Whether providers are allowed to communicate with patients using
+        real-time videoconferencing.
+      </li>
+      <li>
+        Whether payers allow all dental service performed using teledentistry to
+        be paid for.
+      </li>
+      <li>
+        Whether dental hygienists are allowed to make a diagnosis and treatment
+        plan after collecting telehealth records.
+      </li>
+    </ul>
+
+    <h2 id="week-13">Week 13 - Out of Class</h2>
+
+    <h3>Question 1</h3>
+    <p>
+      The ability to successfully start and operate Virtual Dental Home systems
+      is related to which kinds of policies:
+    </p>
+    <ul data-correct="4">
+      <li>Teledentistry laws</li>
+      <li>Agreements between providers and community organizations</li>
+      <li>Dental benefit program guidance</li>
+      <li>All of these answers</li>
+      <li>Scope of practice regulations</li>
+    </ul>
+
+    <h3>Question 2</h3>
+    <p>
+      The evidence supporting the conclusion that dentists can perform full
+      examinations after reviewing remote records includes all of the following
+      EXCEPT:
+    </p>
+    <ul data-correct="1">
+      <li>
+        The decision in a 2018 court case that affirmed the ability for a
+        dentist to perform a billable remote examination.
+      </li>
+      <li>
+        A formal study published in 2012 comparing dentist decisions after
+        performing remote record reviews versus dentist’s decision after
+        performing remote record reviews plus in-person examinations.
+      </li>
+      <li>
+        The 2020 ADA Policy Statement on Teledentistry that says that
+        “examinations performed using teledentisty can be an effective way to
+        extend the reach of dental professionals,”
+      </li>
+      <li>
+        Published articles such as the 2016 Systematic Review that concluded
+        that “Teledentistry has an acceptable diagnostic performance in the
+        detection of dental caries.”
+      </li>
+    </ul>
+
+    <h3>Question 3</h3>
+    <p>The ADA policy on Teledentistry says that</p>
+    <ul data-correct="3">
+      <li>
+        It is the legal responsibility of the dentist to ensure that all
+        personnel collecting records have completed courses certifying their
+        training and ability to do so.
+      </li>
+      <li>
+        In-person (face to face) direct examination has been historically the
+        most direct way to provide care and remains the way that examinations
+        must be performed.
+      </li>
+      <li>
+        Examinations and subsequent interventions performed using teledentistry
+        must be based on the same level of information that would be available
+        in an in-person environment.
+      </li>
+      <li>
+        Examinations and subsequent interventions performed using teledentistry
+        must be based on the level of information required by the technology
+        available at the site where the information Is collected.
+      </li>
+    </ul>
+
+    <h3>Question 4</h3>
+    <p>
+      The most important part of the policy environment that influences the
+      ability to use teledentistry to operate Virtual Dental Home System is:
+    </p>
+    <ul data-correct="2">
+      <li>
+        Whether providers are allowed to communicate with patients using
+        real-time videoconferencing.
+      </li>
+      <li>
+        Whether payers pay for covered dental services if performed using
+        asynchronous or store-and-forward telehealth systems.
+      </li>
+      <li>
+        Whether payers allow all dental service performed using teledentistry to
+        be paid for.
+      </li>
+      <li>
+        Whether dental hygienists are allowed to make a diagnosis and treatment
+        plan after collecting telehealth records.
+      </li>
+    </ul>
+
+    <h3>Question 5</h3>
+    <p>
+      Teledentistry policy started to appear in state laws and regulations first
+      in California after the successful demonstration of the Virtual Dental
+      Home system by Dr. Glassman and his colleagues. What is the current
+      situation with teledentistry policies across the country?
+    </p>
+    <ul data-correct="1">
+      <li>
+        The majority of states have started to adopt teledentistry policies
+        although some are much more comprehensive than others.
+      </li>
+      <li>
+        California still stands out as way ahead of all the other states in the
+        comprehensiveness and usefulness of its teledentistry policies.
+      </li>
+      <li>Every state has now copied California’s teledentistry policies.</li>
+      <li>
+        A few other states have begun to adopt teledentistry policies but most
+        have not.
+      </li>
+    </ul>
+
+    <h3>Question 6</h3>
+    <p>
+      In considering HIPAA when utilizing Teledentistry, as long as patient
+      information and records are stored on a mobile device such as a laptop,
+      compliance is achieved.
+    </p>
+    <ul data-correct="2">
+      <li>True</li>
+      <li>False</li>
+    </ul>
+
+    <h3>Question 7</h3>
+    <p>
+      The rule in California that allows dental provides to bill Medi-Cal in the
+      Fee-for-Service program for dental procedures performed using asynchronous
+      teledentistry is contained in:
+    </p>
+    <ul data-correct="2">
+      <li>A law in the Business and Professions Code</li>
+      <li>A guidance in a Medi-Cal Dental Program Provider Bulletin</li>
+      <li>A regulation in the California Code of Regulations</li>
+      <li>A law in the Dental Practice Act</li>
+    </ul>
+
+    <!-- ————————————————————————————————————————— -->
+    <!-- END: unchanged text sections -->
+    <!-- ————————————————————————————————————————— -->
+
+    <script>
+      document.querySelectorAll('ul[data-correct]').forEach((list) => {
+        const index = parseInt(list.dataset.correct, 10) - 1;
+        const answers = list.querySelectorAll('li');
+        answers.forEach((li, i) => {
+          li.addEventListener('click', () => {
+            answers.forEach((a) => a.classList.remove('correct', 'incorrect'));
+            li.classList.add(i === index ? 'correct' : 'incorrect');
+            let fb = list.querySelector('.feedback');
+            if (!fb) {
+              fb = document.createElement('div');
+              fb.className = 'feedback';
+              list.appendChild(fb);
+            }
+            fb.textContent = i === index ? '✅ Correct!' : '❌ Try again.';
+            fb.style.color = i === index ? 'green' : 'red';
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
